@@ -36,7 +36,6 @@ namespace Frontend.Controllers
 
             var result = await client.PostAsync("/api/values", content);
             string id = await result.Content.ReadAsStringAsync();
-            alert("sdafsdf");
             return Ok(id);
         }
 
